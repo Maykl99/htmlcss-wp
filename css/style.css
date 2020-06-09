@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    background-color: rgb(42, 39, 39);
+}
+
+/* tutti gli elementi di colore bianco! Almeno posso cambiare il colore con un semplicissimo click xd */
+header,i,aside .sfondo,main,h6,a,header_info{ 
+    color: whitesmoke;
+}
+
+.container{
+    padding: 20px;
+}
+
+.overlay{ /* sfondo scuro */ 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+header{
+    height: 350px; 
+    background-color: antiquewhite;
+    background-image: url('https://images.pexels.com/photos/33045/lion-wild-africa-african.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center;
+    background-size: cover;
+    border:5px solid whitesmoke;
+    position: relative;
+}
+
+header span{
+    top: 50%;
+    left: 50%;
+    font-size: 60px;
+    letter-spacing: 6px;
+    border: 6px solid white;
+    padding: 6px;
+}
+
+header h1{
+    bottom: 10%;
+    left: 50%;
+}
+
+header span, header h1{
+    transform: translate(-50%, -50%);
+}
+
+header h1, header span, header i, .header_info{
+    position: absolute;
+}
+
+header i{
+    font-size: 40px;
+    left: 50%;
+    bottom: 70%;
+    transform: translateX(-50%);
+}
+
+.header_info{
+    width: 100%;
+    bottom: 0;
+    background-color: teal;
+    text-align: center;
+}
+
+.header_info ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 3px;
+    cursor: pointer;
+}
+
+
+.header_info li:hover{
+    border-bottom: 2px solid rgb(228, 235, 187);
+    color: rgb(228, 235, 187);
+} /* ======================= FINE PARTE HEADER */
+
+.row{
+    margin: 10px 0;
+}
+
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+
+}
+
+aside, main{
+    float: left;
+}
+
+aside{
+    height: 200px;
+    width: 25%;
+}
+
+main{
+    height: 650px;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.sfondo{
+    height: 100%;
+}
+
+aside .sfondo{
+    background-color: teal;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+aside div, footer{
+    border-radius: 5px;
+}
+
+.sfondo h3, .sfondo div{
+    font-family: sans-serif;
+    padding-top: 3px;
+    display: inline-block;
+    padding-left: 3px;
+}
+
+main .sfondo div{
+    text-align: justify;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+main .sfondo h3{
+    font-size: 22px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+} /* ======================= FINE PARTE MAIN E ASIDE! */
+
+footer{
+    height: 100px;
+    background-color: teal;
+    text-align: center;
+}
+
+hr{
+    width: 90%;
+    padding: 2px;
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+
+
+.final h6{
+    display: inline-block;
+    font-size: 15px;
+    line-height: 100px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
