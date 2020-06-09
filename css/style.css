@@ -63,7 +63,7 @@ header i{
     font-size: 40px;
     left: 50%;
     bottom: 70%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 6px);
 }
 
 .header_info{
